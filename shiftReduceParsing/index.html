@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shift-Reduce Parser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Input Section -->
+        <div class="input-section">
+            <input type="text" id="inputExpr" placeholder="Enter expression">
+            <button id="parseButton">Parse</button>
+        </div>
+
+        <!-- Visualization Area -->
+        <div class="visualization">
+            <div class="stack-panel">
+                <h3>Parser Stack</h3>
+                <div id="stackDisplay"></div>
+            </div>
+            
+            <div class="input-panel">
+                <h3>Input Buffer</h3>
+                <div id="inputBuffer"></div>
+            </div>
+        </div>
+
+        <!-- Step Controls -->
+        <div class="controls">
+            <button id="prevStep">Previous</button>
+            <span id="currentStep">Step 0</span>
+            <button id="nextStep">Next</button>
+        </div>
+
+        <!-- Action History -->
+        <div class="history">
+            <h3>Parsing Steps</h3>
+            <table id="stepTable" class="table">
+                <td>Action</td>
+                <tr >
+                  <th>State</th>
+                  <th>id</th>
+                  <th>+</th>
+                  <th>*</th>
+                  <th>(</th>
+                  <th>)</th>
+                  <th>$</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

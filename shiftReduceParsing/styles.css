@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f0f2f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.input-section {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+#inputExpr {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.visualization {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.stack-panel, .input-panel {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.history table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.history th, .history td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.stack-item, .token {
+  padding: 5px 10px;
+  margin: 2px;
+  background: #e9ecef;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.current-step {
+  background: #e7f1ff;
+}
+
+#stackDisplay, #inputBuffer {
+  min-height: 50px;
+  border: 2px solid #dee2e6;
+  border-radius: 5px;
+  padding: 10px;
+}
+#stepTable{
+  text-align: center;
+  width:600px;
+  
+
+}
